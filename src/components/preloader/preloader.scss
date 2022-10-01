@@ -1,0 +1,45 @@
+.welcome{
+    display: flex;
+    justify-content: center;
+    margin: 29vh 0 17% 0;
+    &__title{
+        padding: 25px;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width:$tab) {
+            width: 95%;
+          }
+    }
+    &__btn{
+        margin-bottom: 10%;
+        @media (max-width:$tab) {
+            width: 95%;
+          }
+    }
+}
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('/src/assets/img/icons/preloader/Blocks-1s-200px.gif') no-repeat center center;
+}
+  
+.visible {
+visibility: visible;
+opacity: 1;
+transition: opacity 2s linear;
+}
+
+.hidden {
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s 2s, opacity 2s linear;
+}

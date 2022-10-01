@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: $desktop;
+    margin: 0 auto;
+    @media (max-width:$tab) {
+        overflow: hidden;
+     }
+}
+.container{
+    max-width: $container-size;
+    margin: 0 auto;
+    @media (max-width:$tab) {
+        margin: 0 10px 0 10px;
+     }
+}
+.sub-btn{
+    background-color: $btn-color;
+    width: 179px;
+    height: 50px;
+    border-radius: 4px; 
+    border: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $btn-text-color;
+    transition: all 500ms ease;
+}
+.sub-btn:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+    img{
+        filter: invert(25%); 
+    }
+}
+.btn{
+    background-color: $btn-color;
+    border-radius: 4px; 
+    border: 0px;
+    width: 280px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 750;
+    font-size: 18px;
+    line-height: 22px;
+    color: $btn-text-color;
+    transition: all 500ms ease; 
+}
+.btn:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+    }
+.sum-text{
+    color: $title-color;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.sub-sum{
+    color: $sub-sum;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.form-style{
+    border-radius: $radisus;
+    box-shadow: 0px 0px 8px rgba(103, 87, 156, 0.25); 
+    background: $btn-text-color;
+}
+.form-btn{
+    width: 50%;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    background: $btn-text-color;
+    border-radius: 4px 3px 6px / 2px 4px;
+}
+.form-btn-click{
+    box-shadow: rgb(0 0 0 / 10%) 1px -2px 2px 0px;
+    z-index: 1
+}
+.color-btn{
+    background: $vertical-line;
+    box-shadow: inset 2px -3px 6px 0px rgb(103 87 156 / 25%);
+}
+.color-btn-old{
+    background: $vertical-line;
+    box-shadow: inset -2px -3px 6px 0px rgb(103 87 156 / 25%);
+}
+.h2{
+    color: $title-color;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.h4{
+    color: $title-color;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.h5{
+    color: $title-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+.h6{
+    color: $user-date-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+.h7{
+    color: $title-color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+}
+.h8{
+    color: $title-color;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.h9{
+    color:$btn-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+} 
+.phone{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.lang{
+    cursor: pointer;
+}
+.lang:hover{
+    font-weight: bold;
+}
+.text-form{
+    text-align: center;
+    color: $title-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.text-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,111 @@
+.header{
+    box-shadow: -11px 1px 20px 0px #a9afb5;
+    position: relative;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bar{
+        @media (max-width:$tab) {
+            display: none;
+         }
+    }
+    &__bar-list{
+        display: flex;
+    }
+    &__bar-item{
+        margin: 27px;
+    }
+    &__info-phone-link{
+        color: $title-color;
+    }
+    &__bar-item-link{
+        text-decoration: none;
+    }
+    &__info{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:$tab) {
+            width: 100%;
+        }
+    }
+    &__bar-item-link{
+        position: relative;
+    }
+    &__bar-item-link::after{
+        position: absolute;
+        content: "";
+        top: 20px;
+        left: 0px;
+        width: 0%;
+    }
+    &__bar-item-link:hover::after{
+        border: 1px solid rgb(68, 26, 26);
+        width: 100%;
+        transition: width 0.60s;
+    }
+    &__info-content{
+        margin: 15px;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:$tab) {
+            display: none;
+        }
+    }
+    &__info-UA::after{
+        content: "";
+        border: 1px solid  #CCD5DF;;
+        color:#CCD5DF;
+        display: flex;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        @media (max-width:$tab) {
+            display: none;
+        }
+    }
+    &__btn-text{
+        margin: 0 0 0 10px;
+    }
+    &__info-mob{
+        display: none;
+        @media (max-width:$tab) {
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color:$btn-color;
+            margin: 15px 0 15px 0;
+        }
+    }
+    &__info-mob-content{
+        @media (max-width:$tab) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 20%;
+        }
+    }
+    &__info-mob-item::before{
+        @media (max-width:$tab) {
+        display: flex;
+        content: "";
+        width: 20px;
+        border: 1px solid $title-color;
+        cursor: pointer;
+        }
+    }
+    &__info-mob-item:nth-child(2n){
+        @media (max-width:$tab) {
+        padding: 5px 0px;
+        }
+    }
+}

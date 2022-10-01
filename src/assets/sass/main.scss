@@ -1,0 +1,16 @@
+//varibels//
+@import "./varibels/_color";
+@import "./varibels/_sizing";
+///global///
+@import "./global/global.scss";
+@import "./global/resets.scss";
+//common//
+@import "./common/header.scss";
+@import './common/footer.scss';
+@import './common/main.scss';
+@import './common/range.scss';
+@import './common/swiper.scss';
+@import './common/menu.scss';
+//form component//
+@import '@/components/form-regist/form.scss';
+@import '@/components/preloader/preloader.scss';
