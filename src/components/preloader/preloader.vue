@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     export default {
       mounted() {
         const form = document.createElement('script')
@@ -6,7 +6,7 @@
         document.body.appendChild(form)
       }
     }
-</script>
+</script> -->
 
 <template>
   <div class="welcome wrapper">
