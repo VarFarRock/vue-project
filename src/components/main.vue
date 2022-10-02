@@ -1,11 +1,11 @@
-<script>
+<script type="module">
     export default {
       mounted() {
         const home = document.createElement('script')
-        home.setAttribute('src', './src/assets/js/index.js')
+        home.setAttribute('src', '/src/assets/js/index.js')
         document.body.appendChild(home)
         const swiper = document.createElement('script')
-        swiper.setAttribute('src', './src/assets/js/slider.js')
+        swiper.setAttribute('src', '/src/assets/js/slider.js')
         document.body.appendChild(swiper)
       }
     }

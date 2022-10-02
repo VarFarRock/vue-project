@@ -1,8 +1,8 @@
-<script>
+<script type="module">
     export default {
       mounted() {
         const bar = document.createElement('script')
-        bar.setAttribute('src', './src/components/side-bar/side--bar.js')
+        bar.setAttribute('src', '/src/components/side-bar/side--bar.js')
         document.body.appendChild(bar)
       }
     }
