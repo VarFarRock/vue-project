@@ -1,12 +1,12 @@
-<!-- <script>
+<script>
     export default {
-      mounted() {
+    mounted() {
         const form = document.createElement('script')
         form.setAttribute('src', './src/components/preloader/index.js')
         document.body.appendChild(form)
       }
     }
-</script> -->
+</script>
 
 <template>
   <div class="welcome wrapper">

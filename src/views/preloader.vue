@@ -1,7 +1,7 @@
 <script setup>
     import Header from '@/components/header.vue'
     import Footer from '@/components/footer.vue'
-    import Preloader from '../components/preloader/preloader.vue';
+    import Preloader from '@/components/preloader/preloader.vue';
 </script>
 
 <template>

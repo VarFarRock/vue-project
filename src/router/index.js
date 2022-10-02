@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/home.vue'
-import regist from '../views/registration-form.vue'
-import preloader from '../views/preloader.vue'
+import HomeView from '@/views/home.vue'
+import regist from '@/views/registration-form.vue'
+import preloader from '@/views/preloader.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

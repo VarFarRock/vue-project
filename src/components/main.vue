@@ -1,4 +1,4 @@
-<!-- <script>
+<script>
     export default {
       mounted() {
         const home = document.createElement('script')
@@ -9,7 +9,7 @@
         document.body.appendChild(swiper)
       }
     }
-</script> -->
+</script>
 <template>
     <section class="hero container">
                 <div class="hero__img">

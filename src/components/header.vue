@@ -1,4 +1,4 @@
-<!-- <script>
+<script>
     export default {
       mounted() {
         const bar = document.createElement('script')
@@ -6,7 +6,7 @@
         document.body.appendChild(bar)
       }
     }
-</script> -->
+</script>
 <template>
     <div class="header__content container">
             <nav class="header__bar">
