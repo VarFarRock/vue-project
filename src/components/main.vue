@@ -1,14 +1,25 @@
 <script type="module">
     export default {
-    beforeMount() {
-        const home = document.createElement('script')
-        home.setAttribute('src', '/src/assets/js/index.js')
-        document.body.appendChild(home)
-        const swiper = document.createElement('script')
-        swiper.setAttribute('src', '/src/assets/js/slider.js')
-        document.body.appendChild(swiper)
-      }
-    }
+    // mounted() {
+    //     const home = document.createElement('script')
+    //     home.setAttribute('src', '/src/assets/js/index.js')
+    //     document.body.appendChild(home)
+    //     const swiper = document.createElement('script')
+    //     swiper.setAttribute('src', '/src/assets/js/slider.js')
+    //     document.body.appendChild(swiper)
+    //   }
+    // }
+    created() {
+    let scripts = [
+      "/src/assets/js/index.js",
+    ];
+    scripts.forEach(script => {
+      let tag = document.createElement("script");
+      tag.setAttribute("src", script);
+      document.head.appendChild(tag);
+    });
+  }
+}
 </script>
 <template>
     <section class="hero container">
