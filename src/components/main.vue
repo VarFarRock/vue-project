@@ -1,6 +1,6 @@
 <script type="module">
     export default {
-      mounted() {
+    beforeMount() {
         const home = document.createElement('script')
         home.setAttribute('src', '/src/assets/js/index.js')
         document.body.appendChild(home)

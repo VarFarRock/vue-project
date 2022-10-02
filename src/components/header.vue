@@ -1,6 +1,6 @@
 <script type="module">
     export default {
-      mounted() {
+    beforeMount() {
         const bar = document.createElement('script')
         bar.setAttribute('src', '/src/components/side-bar/side--bar.js')
         document.body.appendChild(bar)

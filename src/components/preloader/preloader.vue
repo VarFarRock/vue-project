@@ -1,6 +1,6 @@
 <script>
     export default {
-    mounted() {
+    beforeMount() {
         const form = document.createElement('script')
         form.setAttribute('src', './src/components/preloader/index.js')
         document.body.appendChild(form)
